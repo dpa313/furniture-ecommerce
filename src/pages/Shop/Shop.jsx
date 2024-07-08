@@ -2,6 +2,7 @@ import { ProductContext } from "@/context/ProductContext";
 import React, { useContext } from "react";
 import ProductCard from "../Shared/CommonProduct/ProductCard";
 import ShopSidebar from "./ShopSidebar";
+import ProductCardAlt from "../Shared/CommonProduct/ProductCardAlt";
 
 const Shop = () => {
   const { products } = useContext(ProductContext);
@@ -12,7 +13,7 @@ const Shop = () => {
       </div>
       <div className="col-span-3 grid grid-cols-3 gap-5">
         {products?.map((item) => (
-          <ProductCard key={item.id} item={item} />
+          <ProductCardAlt key={item.id} item={item} />
         ))}
       </div>
     </div>

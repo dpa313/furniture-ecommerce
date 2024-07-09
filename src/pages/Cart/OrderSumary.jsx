@@ -3,6 +3,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { CartContext } from '@/context/CartContext'
 import { Input } from "@/components/ui/input";
 import { useContext } from 'react'
+import { Link } from 'react-router-dom';
 
 const OrderSumary = () => {
   const { cart, clearCart, total } = useContext(CartContext);
@@ -82,9 +83,11 @@ const OrderSumary = () => {
                 </div>
                 <Textarea placeholder="Write notes here..." />
               </div>
+              <Link to={"/checkout"}>
               <Button className="w-full rounded-none">
                 Proceed to Checkout
               </Button>
+              </Link>
             </div>
           </div>
         </div>

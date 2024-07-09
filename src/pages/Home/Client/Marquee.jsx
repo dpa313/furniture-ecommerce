@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Marquee = () => {
   return (
-    <div className='container mx-auto'>
+    <div className='mx-auto'>
         <div className='flex overflow-x-hidden side-gradient'>
         <motion.div 
         initial={{x:0}}

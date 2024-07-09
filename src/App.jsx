@@ -18,6 +18,7 @@ import Shop from "./pages/Shop/Shop"
 import About from "./pages/About/About"
 import { Contact } from "./pages/Contact/Contact"
 import ScrollTop from "./pages/Shared/ScroollTop/ScrollTop"
+import CheckOut from "./pages/CheckOut/CheckOut"
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/checkout" element={<CheckOut/>}></Route>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/login" element={<LogIn/>}/>
         </Routes>

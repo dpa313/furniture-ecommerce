@@ -3,6 +3,7 @@ import ProductCard from "@/pages/Shared/CommonProduct/ProductCard";
 import { ProductContext } from "@/context/ProductContext";
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
+import ProductCardAlt from "../Shared/CommonProduct/ProductCardAlt";
 
 const NewTrendFeatPage = () => {
   const { products } = useContext(ProductContext);
@@ -23,7 +24,7 @@ console.log(categoryData);
       <div className="col-span-2 grid grid-cols-4 gap-5 pt-5 ">
 
         {categoryData.map((item) => (
-          <ProductCard item={item} key={item.id} />
+          <ProductCardAlt item={item} key={item.id} />
         ))}
       </div>
     </div>

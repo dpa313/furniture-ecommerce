@@ -8,6 +8,7 @@ import GetInTouch from "@/pages/Home/GetInTouch/GetInTouch";
 import Client from "@/pages/Home/Client/Client";
 import FeaturedProducts from "@/pages/Home/FeaturedProducts/FeaturedProducts";
 import TestFeaturedProducts from "@/components/testCode/FeaturedProducts/TestFeaturedProducts";
+import MarqueeSlide from "../Client/MarqueeSlide";
 
 const Home = () => {
   return (
@@ -19,7 +20,8 @@ const Home = () => {
       <Testimonial/>
       <GetInTouch/>
       {/* <CommonProduct/> */}
-      <Client/>
+      {/* <Client/> */}
+      <MarqueeSlide/>
     </div>
   );
 };

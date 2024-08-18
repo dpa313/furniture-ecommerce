@@ -26,12 +26,12 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-col justify-between pb-10 ">
         <div className="space-y-5">
-          <Button
-            variant="outline"
-            className="w-full rounded-none font-semibold border-0 border-t-2 hover:bg-transparent"
+          <div
+            // variant="outline"  
+            className="w-full text-center rounded-none font-semibold border-0 border-t-2 hover:bg-transparent"
           >
             $ {parseFloat(total).toFixed(2)}
-          </Button>
+          </div>
           <div className="flex gap-2">
             <div className=" w-full rounded-none">
               <Link to={"/cartpage"}>
